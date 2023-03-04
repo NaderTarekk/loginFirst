@@ -1,0 +1,57 @@
+.navbar {
+    background-color: #434a52 !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav-profile {
+    position: relative;
+
+    .profile-img {
+        width: 50px;
+    }
+
+    .profile {
+        position: absolute;
+        font-size: 12px;
+        font-weight: 400;
+        background: #ddd;
+        border-radius: 8px;
+        padding: 15px 20px;
+
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            background: #ddd;
+            display: block;
+            position: absolute;
+            top: -7px;
+            left: 25px;
+            rotate: 45deg;
+        }
+
+        p {
+            // padding: ;
+        }
+
+        a {
+            display: block;
+            padding: 5px 8px !important;
+            color: #434a52 !important;
+            border-radius: 4px;
+            transition: .3s;
+
+            &:hover {
+                transition: .3s;
+                background: #434a52;
+                color: #ddd !important;
+                transform: translateX(5px);
+            }
+        }
+
+    }
+
+}
